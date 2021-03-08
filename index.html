@@ -311,15 +311,34 @@
            // Chiedi per 6 volte all'utente di inserire un numero,
            // se è dispari inseriscilo nell'array
 
-           var dannyArr = [];
-           for (var i = 0; i<6; i++) {
-             var valore = parseInt(prompt ("Dammi un numero"));
-             var dispari = valore % 2 == 1;
-             if (dispari) {
-               dannyArr.push(valore);
-             }
-           }
-           console.log(dannyArr);
+
+           // 1) ALTERNATIVA CON FOR
+
+           // var dannyArr = [];
+           // for (var i = 0; i<6; i++) {
+           //   var valore = parseInt(prompt ("Dammi un numero"));
+           //   var dispari = valore % 2 == 1;
+           //   if (dispari) {
+           //     dannyArr.push(valore);
+           //   }
+           // }
+           // console.log(dannyArr);
+
+
+           // 2) ALTERNATIVA CON WHILE
+
+           // var dannyArr = [];
+           // var i = 0;
+           // while (i<6) {
+           //   var valore = parseInt(prompt ("Dammi un numero"));
+           //   var dispari = valore % 2 == 1;
+           //   i++;
+           //   if (dispari) {
+           //     dannyArr.push(valore);
+           //   }
+           // }
+           // console.log(dannyArr);
+           //
            // ------------------------------------------------------------------
 
 
