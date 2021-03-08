@@ -307,7 +307,19 @@
 
            // -------------------EXERCISE 7-------------------------------------
 
+           // Crea un array vuoto.
+           // Chiedi per 6 volte all'utente di inserire un numero,
+           // se è dispari inseriscilo nell'array
 
+           var dannyArr = [];
+           for (var i = 0; i<6; i++) {
+             var valore = parseInt(prompt ("Dammi un numero"));
+             var dispari = valore % 2 == 1;
+             if (dispari) {
+               dannyArr.push(valore);
+             }
+           }
+           console.log(dannyArr);
            // ------------------------------------------------------------------
 
 
@@ -396,15 +408,6 @@
             // }
             // }
             // console.log(index + ": " + max);
-
-
-
-
-
-
-
-
-
 
 
 
