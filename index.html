@@ -23,7 +23,7 @@
       #lol {
         text-align: center;
         color: white;
-        font-size: 50px;
+        font-size: 25px;
       }
 
       #lallero {
@@ -405,7 +405,11 @@
 
             // -----------------------EXERCISE 10-------------------------------
 
-            
+            var arrLastname = ["Brogno", "Wallace", "Cappelletti", "Alatriste", "Willis", "Aureliano", "Vignali", "Torero", "Scipione", "Herman", "Dylan", "Truman", ];
+            arrLastname.sort();
+            var userLastname = prompt("Write here your lastname");
+            console.log(arrLastname, userLastname);
+            document.getElementById("lol").innerHTML = arrLastname, userLastname;
 
 
 
