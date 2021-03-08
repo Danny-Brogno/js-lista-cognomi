@@ -410,12 +410,12 @@
             var userLastname = prompt("Write here your lastname");
             arrLastname.push(userLastname);
 
-            for (i = 0; i < arrLastname.length; i++) {
-            if (userLastname == arrLastname[i]) {
+              for (i = 0; i < arrLastname.length; i++) {
+                if (userLastname == arrLastname[i]) {
                 console.log(arrLastname[i] + ": " + (i + 1));
                 break;
+              }
             }
-        }
             console.log(arrLastname, userLastname);
             document.getElementById("lol").innerHTML = arrLastname, userLastname;
 
