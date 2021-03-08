@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>UN SITO INUTILE</title>
+  </head>
+  <body>
+
+
+    <!---__________CSS__________-->
+    <style>
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+      body {
+        background-color: black;
+      }
+
+      #lol {
+        text-align: center;
+        color: white;
+        font-size: 50px;
+      }
+
+      #lallero {
+        text-align: center;
+        color: pink;
+        font-size: 40px;
+        margin-top: 500px;
+      }
+
+      #fulmicotone {
+        text-align: center;
+        position: relative;
+        top: 241px;
+        color: red;
+        font-size: 40px;
+      }
+    </style><!---__________END CSS__________-->
+
+
+
+
+
+    <!--__________HTML__________-->
+    <h1 id="lol">UN SITO INUTILE</h1>
+    <h3 id="fulmicotone"></h3>
+    <h2 id="lallero">From Brogno with &#10084;</h2>
+
+    <!--__________END HTML__________-->
+
+
+
+
+
+    <!---__________JavaScript__________-->
+  <script type="text/javascript">
+
+    // TEST
+
+    // var dannyArr = ["Danny", "Brogno", "Buffy", "the cat", "Diego", "Alatriste", "William", "Wallace", "Cornelio", "Scipione"];
+    //
+    // for (var i = 0; i < dannyArr.length; i++) {
+    // console.log(dannyArr[i]);
+    // }
+    //
+    // document.getElementById('lol').innerHTML = dannyArr;
+
+
+
+
+
+    // ----------------------EXERCISE 1-----------------------------------------
+
+    // Crea un array contenente 3 nomi.
+
+        // Chiedi un numero da 0 a 2 all'utente e
+        // stampa l'elemento dell'array
+        // corrispondente
+
+        // var dannyArr = ["Pippo", "Paperino", "Pluto"];
+        // var dannyIndex = parseInt(prompt("Scegli un numero fra 0 e 2"));
+        // console.log(dannyArr[dannyIndex]);
+        // document.getElementById('lol').innerHTML = dannyArr[dannyIndex];
+
+    // -------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+    // -------------------EXERCISE 2--------------------------------------------
+
+    // var dannyArr = [ "Danny", "Brogno", "Buffy", "the cat", "Diego", "Alatriste", "William", "Wallace", "Publio", "Cornelio", "Scipione" ];
+    // console.log(dannyArr, dannyArr.length);
+    //
+    // for (var i = 0; i<dannyArr.length; i++) {
+    //   var elem = dannyArr[i];
+    //   if (elem % 2 == 0) {
+    //   console.log(elem);
+    //   document.getElementById('lol').innerHTML = elem;
+    //   }
+    // }
+
+    // -------------------------------------------------------------------------
+
+
+
+
+
+
+    // ----------------------------EXERCISE 3 ----------------------------------
+
+    // stampare un elemento ogni 2
+
+      // var arr = [ "Danny", "Brogno", "Buffy", "the cat", "Diego", "Alatriste", "William", "Wallace", "Publio", "Cornelio", "Scipione" ];
+      // console.log(arr.length);
+      // for (var i=0;i<arr.length;i++) {
+      //
+      // if (i % 2 == 0) {
+      //   console.log(arr[i]);
+      //   document.getElementById('lol').innerHTML = (arr[i]);
+      //   }
+      // }
+
+      // -----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+      // ---------------------------------EXERCISE 4----------------------------
+
+      // stampare tutte le parole con lunghezza pari
+
+        // var dannyArr = [ 'Danny', 'Brogno', 'Buffy', 'thecat', 'Diego', 'Alatriste', "Caio", "Giulio", "Cesare" ];
+        // for (var i=0;i<dannyArr.length;i++) {
+        // var elem = dannyArr[i];
+        // var lng = elem.length;
+        // if (lng % 2 == 0) {
+        //   console.log(elem);
+        //   document.getElementById('lol').innerHTML = elem;
+        //   }
+        // }
+
+        // ---------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+        // ------------------EXERCISE 5-----------------------------------------
+
+        // ESERCIZIO UFFICIALE DEL 04/03/2021
+
+        // 1 - Chiedi all'utente la sua email, controlla che sia nella lista di chi può accedere, stampa un messaggio appropriato
+
+         // var emailUser = prompt("Write here your email.");
+         // var dannyArr = [ "ciao@gmail.com", "lol@gmail.com", "lallero@gmail.com", "buffy@gmail.com" ];
+         // var access = false;
+         // for (var i=0; i<dannyArr.length; i++) {
+         //   console.log(dannyArr[i]);
+         //   if (dannyArr[i] == emailUser) {
+         //    // i = dannyArr.length;vedi linea 194
+         //    console.log("email found");
+         //    access = true;
+         //    break;
+         //  }
+         // }
+         // if (access == true) {
+         //   console.log("ACCESS GRANTED");
+         //   document.getElementById('lol').innerHTML = "ACCESS GRANTED";
+         // } else {
+         //   console.log("ACCESS DENIED");
+         //   document.getElementById('lol').innerHTML = "ACCESS DENIED";
+         // }
+
+         // LINEA 180 Questo non si usa tendenzialmente in quanto sfaso l'indice (detto a lezione il 05/03/2021 da Giovanni Cappelletti)
+
+
+
+           // 2 - Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. Stabilire il vincitore, in base a chi fa il punteggio più alto.
+
+           // var userResult = Math.floor((Math.random() * 6) + 1);
+           // var pcResult = Math.floor((Math.random() * 6) + 1);
+           //
+           // if (pcResult > userResult) {
+           //   console.log("PC WINS");
+           //   document.getElementById("fulmicotone").innerHTML = "HAI PERSO CAPRA! " + "Il tuo risultato è  "  + userResult + "." + " Il mio risultato è  "  + pcResult + ".";
+           // } else if (pcResult < userResult) {
+           //   console.log("USER WINS");
+           //   document.getElementById("fulmicotone").innerHTML = "hai vinto... (solo fortuna). " + "Il tuo risultato è  "  + userResult + "." + " Il mio risultato è  "  + pcResult + ".";
+           // } else if (pcResult == userResult) {
+           //   console.log("DRAW");
+           //   document.getElementById("fulmicotone").innerHTML = "Parità. " + "Il tuo risultato è  "  + userResult + "." + " Il mio risultato è  "  + pcResult + ".";
+           // }
+           //
+           // console.log("User result = " + userResult + " Pc result = " + pcResult);
+           // document.getElementById("lol").innerHTML = userResult;
+           // document.getElementById("lallero").innerHTML = pcResult;
+
+
+
+           // --------------------------------EXERCISE 5------------------------
+
+           // L'utente inserisce due numeri in successione, con due prompt. Il software stampa il maggiore
+
+           // var userNum1 = parseInt(prompt("Write here a number"));
+           // var userNum2 = parseInt(prompt("Write here another number"));
+           // console.log(userNum1, userNum2);
+           //
+           //
+           // if (userNum1 > userNum2) {
+           //   console.log("userNum1 > userNum2")
+           //   document.getElementById('lol').innerHTML = userNum1;
+           // } else if (userNum2 > userNum1) {
+           //   console.log("userNum2 > userNum1");
+           //   document.getElementById('lol').innerHTML = userNum2;
+           // } else {
+           //   console.log("userNum2 == userNum1");
+           // }
+
+
+           // ------------------------------------------------------------------
+
+
+
+
+
+
+
+
+           // --------------------EXERCISE 6-----------------------------------
+
+           // L'utente inserisce due parole in successione,
+           // con due prompt. Il software stampa prima la
+           // parola più corta, poi la parola più lunga.
+
+           // var firstWord = prompt("Scrivi qui una parola");
+           // var secondWord = prompt("Scrivi qui un'altra parola");
+           //
+           // var lng1 = firstWord.length;
+           // var lng2 = secondWord.length;
+           //
+           //
+           // if (lng1 > lng2) {
+           //   console.log(firstWord, secondWord);
+           //   document.getElementById('lol').innerHTML = firstWord, secondWord;
+           // } else if (lng1 < lng2) {
+           //   console.log(secondWord, firstWord);
+           //   document.getElementById('lol').innerHTML = secondWord, firstWord;
+           // } else {
+           //   console.log(firstWord, secondWord);
+           //   document.getElementById('lol').innerHTML = firstWord, secondWord;
+           // }
+
+           // ------------------------------------------------------------------
+
+
+
+
+
+
+           // -----------------------EXERCISE 7---------------------------------
+
+           // Il software deve chiedere per 5 volte all'utente di inserire
+           // un numero. Il programma stampa la somma di tutti i numeri
+           // inseriti
+
+           // var sum = 0;
+           // for (var i=0; i<5; i++) {
+           //   var value = parseInt(prompt ("Give me a number"));
+           //   sum = sum + value;
+           // }
+           // console.log(sum);
+
+           // ------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           // -------------------EXERCISE 7-------------------------------------
+
+
+           // ------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           // ------------------EXERCISE 8--------------------------------------
+
+           // Scrivi un programma che stampi i numeri da 1 a 100,
+           // ma per i multipli di 3 stampi "Fizz" al posto del numero e per i multipli di 5 stampi Buzz.
+           // Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
+
+            // for (var i = 1; i < 100; i++) { // This formula says the initial value on i is one and is MINOR of 101 (so it will go up to 100) and then i++ makes the cycle move forward i = i + 1
+            //
+            //   if ((i % 3 == 0) && (i % 5 == 0)) { // For "fizzBuzz" I just put a different formula to select both multiples of 3 and 5
+            //   console.log("fizzBuzz");
+            //
+            //   } else if (i % 5 == 0) { // Same thing for 5.
+            //   console.log("buzz");
+            //
+            //   } else if (i % 3 == 0) { // Here I say that IF i (module) is divided by 3 and it gives no change (so it is a multiple of 3) than it has to stamp fizz in the console.
+            //   console.log("fizz");
+            //
+            //   } else {
+            //   console.log(i);
+            //   }
+            //
+            // }
+
+
+            // -----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+            // -------------------EXERCISE 9------------------------------------
+
+            // var arr = [];
+            // for (var i=0; i<5; i++) {
+            //   var rnd = Math.floor(Math.random() * 6) + 1;
+            //   arr.push(rnd);
+            // }
+            //
+            // var max = 0;
+            // var index = 0;
+            // for (var i=0; i<arr.length; i++) {
+            //   var elem = arr[i];
+            //
+            //   if (elem > max) }
+            //
+            //   index = i + 1;
+            //   max = elem;
+            // }
+            //
+            // console.log(index + ": " + max);
+
+
+            // REFACTORING
+
+            // var max = 0;
+            // var index = 0;
+            // for (var i=0; i<5; i++) {
+            //   var rnd = Math.floor(Math.random() * 6) + 1;
+            //   console.log(rnd);
+            //
+            // if (rnd > max) }
+            //   index = i + 1;
+            //   max = rnd;
+            // }
+            // }
+            // console.log(index + ": " + max);
+
+
+
+
+
+
+
+            // -----------------------EXERCISE 10-------------------------------
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // -----------------------------------------------------------------
+
+
+
+  </script>
+  </body>
+</html>
