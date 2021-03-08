@@ -410,13 +410,22 @@
             var userLastname = prompt("Write here your lastname");
             arrLastname.push(userLastname);
 
-              for (i = 0; i < arrLastname.length; i++) {
-                if (userLastname == arrLastname[i]) {
-                console.log(arrLastname[i] + ": " + (i + 1));
-                break;
-              }
-            }
-            console.log(arrLastname, userLastname);
+
+            // TEST N1
+
+            // for (i = 0; i < arrLastname.length; i++) {
+            //   if (userLastname == arrLastname[i]) {
+            //     console.log(arrLastname[i] + ": " + (i + 1));
+            //     break;
+            //   }
+            // }
+
+
+            // TEST N2
+            // var textArr = arrLastname.split(" ");
+            // textArr.sort();
+
+            console.log(arrLastname, userLastname, textArr);
             document.getElementById("lol").innerHTML = arrLastname, userLastname;
 
 
@@ -424,7 +433,9 @@
 
 
 
-
+            // var input = prompt("Enter a line of text: ");
+            // var textArr = input.split(' ');
+            // console.log(textArr.sort());
 
 
 
