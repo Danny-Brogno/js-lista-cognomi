@@ -405,26 +405,19 @@
 
             // -----------------------EXERCISE 10-------------------------------
 
-            var arrLastname = ["Brogno", "Wallace", "Cappelletti", "Alatriste", "Willis", "Aureliano", "Vignali", "Torero", "Scipione", "Herman", "Dylan", "Truman", ];
-            arrLastname.sort();
-            var userLastname = prompt("Write here your lastname");
+            var arrLastname = ["Brogno", "Wallace", "Cappelletti", "Alatriste", "Zagorakis", "Istrice", "Karagunis", "Torero", "Scipione", "Herman", "Dylan", "Fogath", ];
+            var userLastname = prompt("Write here your lastname (first letter is capital)");
             arrLastname.push(userLastname);
+            arrLastname.sort();
 
+            var index = 0;
+            for (var i = 0; i < arrLastname.length; i++) {
+              if (userLastname == arrLastname[i]) {
+                index = i;
+              }
+            }
 
-            // TEST N1
-
-            // for (i = 0; i < arrLastname.length; i++) {
-            //   if (userLastname == arrLastname[i]) {
-            //     console.log(arrLastname[i] + ": " + (i + 1));
-            //     break;
-            //   }
-            // }
-
-
-            // TEST N2
-            // var textArr = arrLastname.split(" ");
-            // textArr.sort();
-
+            console.log(arrLastname[index] + " is number "+ (index + 1));
             console.log(arrLastname, userLastname);
             document.getElementById("lol").innerHTML = arrLastname, userLastname;
 
