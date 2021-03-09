@@ -441,21 +441,21 @@
             // Chiedere all'utente il suo cognome e inserirlo in un array non ordinato.
             // Riordinare l'array e stampare la lista dei cognomi in ordine alfabetico e la posizione "umana" (partendo da 1) del cognome dell'utente.
 
-            var arrLastname = ["Brogno", "Wallace", "Cappelletti", "Alatriste", "Zagorakis", "Istrice", "Karagunis", "Torero", "Scipione", "Herman", "Dylan", "Fogath", ];
-            var userLastname = prompt("Write here your lastname (first letter is capital)");
-            arrLastname.push(userLastname);
-            arrLastname.sort();
-
-            var index = 0;
-            for (var i = 0; i < arrLastname.length; i++) {
-              if (userLastname == arrLastname[i]) {
-                index = i;
-              }
-            }
-
-            console.log(arrLastname[index] + " is number "+ (index + 1));
-            console.log(arrLastname, userLastname);
-            document.getElementById("lol").innerHTML = arrLastname, userLastname;
+            // var arrLastname = ["Brogno", "Wallace", "Cappelletti", "Alatriste", "Zagorakis", "Istrice", "Karagunis", "Torero", "Scipione", "Herman", "Dylan", "Fogath", ];
+            // var userLastname = prompt("Write here your lastname (first letter is capital)");
+            // arrLastname.push(userLastname);
+            // arrLastname.sort();
+            //
+            // var index = 0;
+            // for (var i = 0; i < arrLastname.length; i++) {
+            //   if (userLastname == arrLastname[i]) {
+            //     index = i;
+            //   }
+            // }
+            //
+            // console.log(arrLastname[index] + " is number "+ (index + 1));
+            // console.log(arrLastname, userLastname);
+            // document.getElementById("lol").innerHTML = arrLastname, userLastname;
 
 
 
@@ -482,6 +482,107 @@
             // }
 
             // -----------------------------------------------------------------
+
+                              //----------------------EXERCISE 12---------------------------
+
+                              // Crea due array che hanno un numero di elementi diversi.
+                              // Aggiungi elementi all'array che ha meno elementi fino a
+                              // quando ne avrà tanti quanti l'altro.
+                              // var arr1 = [ 3 ];
+                              // var arr2 = [ 15, 2, 7 ];;
+                              //
+                              // var lng1 = arr1.length;
+                              // var lng2 = arr2.length;
+                              //
+                              // if (lng1 == lng2){
+                              //   console.log("they are the same");
+                              // } else if (lng1 > lng2) {
+                              //   var shortArr = arr2;
+                              //   var longArr = arr1;
+                              // } else { // lng2 > lng1
+                              //   var shortArr = arr1;
+                              //   var longArr = arr2;
+                              // }
+                              //
+                              // var elemMancanti = longArr.length - shortArr.length;// IL TOTALE DEGLI ELEMENTI NELL'ARRAY PIU GRANDE MENO QUELLI DELL'ARRAY PIU CORTO
+                              //
+                              // for (var i=0; i<elemMancanti; i++) {
+                              //   var elemRnd = Math.floor(Math.random() * 100) + 1;
+                              //   shortArr.push(elemRnd);
+                              //
+                              // }
+                              //
+                              // console.log(shortArr, longArr);
+
+                              // -----------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              // --------------------------EXERCISE 13----------------------
+                              // Chiedere all'utente un valore limite, poi richiedere all'utente una serie di valori finche' la somma non supera il valore limite e stampare i valori forniti dall'utente
+
+                              // var limit = parseInt(prompt("Dammi il valore limite"));
+                              // var sum = 0;
+                              // var values = [];
+                              //
+                              // while (sum < limit){
+                              //   var value = parseInt(prompt ("Ci serve di più per poter arrivare al tuo valore limite"));
+                              //   values.push(value);
+                              //   sum = sum + value;
+                              //
+                              // }
+                              //
+                              // console.log(sum, values);
+
+
+                              // -----------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              // -------------------EXERCISE 14-----------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+                              // Crea due tag div con due id diversi.
+                              // Un div avrà il testo colorato di rosso mentre l'altro di verde.
+                              // Partendo da un array di numeri, stampiamo nell'id rosso i numeri
+                              // dispari e in verde i numeri pari.
+
+                              // var numbers = [15, 20, 1, 3, 22, 33, 12, 44, 77, 11, 88, 16, 99, 100];
+                              // var even = document.getElementById('lol');
+                              // var odd = document.getElementById('lallero');
+                              // for (var i = 0; i < numbers.length; i++) {
+                              //     var number = numbers[i];
+                              //     if (number % 2 == 0) {
+                              //         even.innerHTML += "<br>" + number + "<br>";
+                              //     } else {
+                              //         odd.innerHTML += "<br>" + number + "<br>";
+                              //     }
+                              // }
+
 
 
 
